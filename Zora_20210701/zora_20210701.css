@@ -1,0 +1,302 @@
+.flex-1{
+  display:flex ;
+}
+
+.logo{
+
+  padding:0%;
+  margin-top: 35px;
+  margin-right:37px ;
+}
+
+
+.navbar{
+  padding:0%;
+  margin-top:30px;
+  padding-left: 100px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  }
+  
+li {
+  float: left;
+  }
+  
+li a {
+  display: block;
+  color: #93908B;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+  
+li a:hover:not(.active) {
+  color: #111;
+  }
+  
+.active {
+  background-color: #19150F;
+  }
+
+
+
+.text-1{
+
+  margin-top:235px ;
+  color:#B69D78;
+  font-family:Serif;
+  font-size: 16px;
+
+}
+
+
+.text-2{
+  margin-top: 52pxs;
+  color: #19150F;
+  font-size: 64px;
+}
+
+.text-3{
+  margin-top: 28px;
+  color: #93908B;
+  font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.btn-1{
+  margin-top: 28px;
+  font-size: 16px;
+  color: #19150F;
+  border: 1px solid #B69D78;
+  padding: 15px 49px 15px 17px;
+  text-decoration: none;
+  display: inline-block;
+    
+}
+
+.btn-1:hover{
+  border: 1px solid #8A5461;
+  color: #19150F;
+}
+
+.btn-1::after{
+
+  content: url(/image/grommet-icons_form-next-link.svg);
+  margin-left: 17px ;
+  position:absolute;
+  height: 50%;
+  margin-bottom: -5px;
+
+}
+
+
+.text-4{
+  color:#93908B;
+  font-size: 15px;
+  margin-top: 115px;
+}
+
+
+.flex-2{
+  display: flex;
+}
+
+.image-1{
+
+  max-width:100%;
+  height: auto;
+  position: absolute;
+  right:0%;
+
+}
+
+.image-2{
+
+  max-width: 100%;
+  position: relative;
+  top:238px;
+
+}
+
+.image-3{
+  margin-right: 37px;
+  margin-top: 10px;
+}
+
+
+.text-5{
+
+  margin-top:150px;
+  text-align: center;
+  color:#B69D78;
+  font-family: Serif;
+  font-size:48px;
+
+}
+
+
+.text-6{
+
+  text-align: center;
+  font-size: 16px;
+  color: #93908B;
+  margin-top: 62px;
+}
+
+
+.flex-3{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 51px;
+}
+
+.image-4{
+position: absolute;
+left: 0%; 
+max-height: 100%;
+padding: 0%;
+margin-top: 188px;
+}
+
+.block-2{
+  position: relative;
+  z-index:1;
+  background-color:#FFFF;
+  width: 700px;
+  height: 687px;
+  margin-top: 186px;
+  padding: 1px 32px 0px 96px; 
+}
+
+
+
+.text-7{
+
+  margin-top:95px ;
+  color: #B69D78;
+  font-size: 16px;
+  font-family: serif;
+}
+
+
+.text-8{
+  color: #19150F;
+  margin-top: 14px;
+  font-size: 48px;
+
+
+}
+
+.text-9{
+  color: #19150F;
+  font-size: 16px;
+  margin-top: 13px;
+}
+
+.text-10{
+
+  color: #413E3A;
+  font-size: 16px;
+  margin-top: 35px;
+}
+
+
+.btn-2{
+  display: inline-block;
+  border-color:#FFFF #FFFF #B69D78  #FFFF; 
+  border-width:1px;
+  border-style:solid;
+  padding: 7px 40px 7px 10px;
+  color: #19150F;
+  text-decoration: none;
+}
+
+.btn-2:hover{
+
+  color: #19150F;
+  border-color:#FFFF #FFFF #8A5461  #FFFF; 
+  border-width:1px;
+  border-style:solid;
+}
+
+.btn-2::after{
+
+  content: url(/image/grommet-icons_form-next-link.svg);
+  margin-left: 17px ;
+  position:absolute;
+  height: 50%;
+  margin-bottom: -5px;
+}
+
+.link-top{
+  margin-top: 57px;
+  width: 457px;
+  height: 0.75px;
+  border-top: 0.75px solid #93908B ;
+}
+
+.link-top2{
+
+  margin-top: 20px;
+  width: 457px;
+  height: 0.75px;
+  border-top: 0.75px solid #93908B ;
+}
+
+
+.text-11{
+color:#B69D78;
+font-size: 69px;
+font-family: serif;
+
+
+}
+
+.flex-4{
+
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.text-12{
+
+  margin-left: 35px;
+  font-size: 16px;
+  color: #413E3A;
+
+}
+
+.link-right{
+  width: 0.75px;
+  height: 79px;
+  border-right: 0.75px solid #93908B ;
+  margin-left: 53px;
+  margin-right: 36px;
+}
+
+
+
+.block-3{
+  margin-top: 157px;
+  display: flex;
+  margin-left: 357px;
+  align-items: center;
+}
+
+.text-13{
+  font-size:48px ;
+  margin-right: 550px;  
+
+}
+
+
+
+
