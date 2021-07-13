@@ -63,19 +63,19 @@ li a:hover:not(.active) {
 
 .text-3{
   margin-top: 28px;
+  margin-bottom: 28px;
   color: #93908B;
   font-size: 16px;
   font-family:Arial, Helvetica, sans-serif;
 }
 
 .btn-1{
-  margin-top: 28px;
+  position: relative;
   font-size: 16px;
   color: #19150F;
   border: 1px solid #B69D78;
   padding: 15px 49px 15px 17px;
   text-decoration: none;
-  display: inline-block;
     
 }
 
@@ -86,11 +86,15 @@ li a:hover:not(.active) {
 
 .btn-1::after{
 
-  content: url(/image/grommet-icons_form-next-link.svg);
-  margin-left: 17px ;
-  position:absolute;
+  content:'';
+  display: block;
+  width: 50%;
   height: 50%;
-  margin-bottom: -5px;
+  background:url(/image/grommet-icons_form-next-link.svg) no-repeat;
+  position:absolute;
+  top:50%;
+  margin-top: -10px; 
+  margin-left:160px ;
 
 }
 
@@ -116,10 +120,22 @@ li a:hover:not(.active) {
 }
 
 .image-2{
-
   max-width: 100%;
   position: relative;
   top:238px;
+
+}
+
+
+.flex-5{
+
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  z-index:1;
+  margin-left:400px;
+  margin-right: 100px;
+  margin-top:50px;
 
 }
 
@@ -158,12 +174,15 @@ li a:hover:not(.active) {
 }
 
 .image-4{
-position: absolute;
-left: 0%; 
-max-height: 100%;
-padding: 0%;
-margin-top: 188px;
+
+  position: absolute;
+  left: 0%; 
+  max-height: 100%;
+  padding: 0%;
+  margin-top: 188px;
+
 }
+
 
 .block-2{
   position: relative;
@@ -172,9 +191,9 @@ margin-top: 188px;
   width: 700px;
   height: 687px;
   margin-top: 186px;
-  padding: 1px 32px 0px 96px; 
-}
+  padding: 1px 32px 0px 180px; 
 
+}
 
 
 .text-7{
@@ -187,17 +206,19 @@ margin-top: 188px;
 
 
 .text-8{
+
   color: #19150F;
   margin-top: 14px;
   font-size: 48px;
 
-
 }
 
 .text-9{
+
   color: #19150F;
   font-size: 16px;
   margin-top: 13px;
+
 }
 
 .text-10{
@@ -205,11 +226,12 @@ margin-top: 188px;
   color: #413E3A;
   font-size: 16px;
   margin-top: 35px;
+
 }
 
 
 .btn-2{
-  display: inline-block;
+  position: relative;
   border-color:#FFFF #FFFF #B69D78  #FFFF; 
   border-width:1px;
   border-style:solid;
@@ -227,12 +249,15 @@ margin-top: 188px;
 }
 
 .btn-2::after{
-
-  content: url(/image/grommet-icons_form-next-link.svg);
-  margin-left: 17px ;
-  position:absolute;
+  display: block;
+  content: '';
+  width: 50%;
   height: 50%;
-  margin-bottom: -5px;
+  background: url(/image/grommet-icons_form-next-link.svg) no-repeat;
+  position:absolute;
+  top:50%;
+  margin-top: -10px; 
+  margin-left: 100px ;
 }
 
 .link-top{
@@ -252,10 +277,10 @@ margin-top: 188px;
 
 
 .text-11{
-color:#B69D78;
-font-size: 69px;
-font-family: serif;
 
+  color:#B69D78;
+  font-size: 69px;
+  font-family: serif;
 
 }
 
@@ -283,20 +308,308 @@ font-family: serif;
 }
 
 
+.btn-3{
+  position: relative;
+  border-color:#FFFF #FFFF #B69D78  #FFFF; 
+  border-width:1px;
+  border-style:solid;
+  padding: 7px 40px 7px 10px;
+  color: #19150F;
+  text-decoration: none;
+}
+
+.btn-3:hover{
+
+  color: #19150F;
+  border-color:#FFFF #FFFF #8A5461  #FFFF; 
+  border-width:1px;
+  border-style:solid;
+}
+
+.btn-3::after{
+  display: block;
+  content: '';
+  width: 50%;
+  height: 50%;
+  background: url(/image/grommet-icons_form-next-link.svg) no-repeat;
+  position:absolute;
+  top:50%;
+  margin-top: -10px; 
+  margin-left: 120px ;
+}
+
+
 
 .block-3{
   margin-top: 157px;
   display: flex;
-  margin-left: 357px;
   align-items: center;
+  justify-content: center;
+  
 }
 
 .text-13{
   font-size:48px ;
-  margin-right: 550px;  
+  margin-right: 629px;  
 
+}
+
+.block-4{
+  margin-top:78px ;
+  text-align: center;
+}
+
+
+
+.text-14{
+  margin-top: 46px;
+  color: #19150F;
+  font-size: 24px;
+}
+
+
+.btn-4{
+  position: relative;
+  text-decoration: none;
+  color:#19150F;
+  padding: 7px 40px 7px 10px;
+
+}
+
+
+.btn-4::after{
+  display:block;
+  content:'';
+  background: url(/image/grommet-icons_form-next-link.svg) no-repeat;
+  height: 20px;
+  width: 50px;
+  position:absolute;
+  top:50%;
+  margin-top: -10px;
+  margin-left: 270px ;
+}
+
+.btn-4:hover::after{
+
+  content: url(/image/Vector.svg);
+  margin-left: 17px ;
+  position:absolute;
+  margin-top: 2px;
+  }
+
+
+
+.btn-4:hover{
+  color: #B69D78;
+}
+
+
+.block-5{
+  margin-top: 150px;
+  height: 600px;
+  background-image: url(/image/writer-author-template-quote-img-bg.jpg);
+  background-size: cover;
+}
+
+
+
+.mask{
+  text-align: center;
+  background-color:#8a5461bb;
+  height: 600px;
+}
+
+.text-15{
+  color: #FFFF;
+  font-size: 48px;
+  padding-top: 44px;
+  margin-bottom: 70px;
+}
+
+.text-16{
+  color: #FFFF;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.block-6{
+  margin-top: 109px;
+}
+
+.text-17{
+  font-size: 32px;
+  color:#93908B ;
+  font-family: serif;
+
+}
+
+.text-18{
+  font-size: 45px;
+  color: #19150F;
+  font-family: serif ;
+  font-weight:bold;
+}
+
+
+.block-7{
+  margin-top: 15px;
+}
+
+.link-top3{
+  margin-top: 43px;
+  width: 457px;
+  height: 0.75px;
+  border-top: 0.75px solid #93908B ;
+}
+
+
+.link-right2{
+  margin-top:24px ;
+  width: 0.75px;
+  height: 79px;
+  border-right: 0.75px solid #93908B ;
+  margin-left: 53px;
+  margin-right: 36px;
+}
+
+.link-top4{
+  width: 457px;
+  height: 0.75px;
+  border-top: 0.75px solid #93908B ;
+}
+
+.text-19{
+  position: relative;
+  color: #413E3A;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.text-19::before{
+  display: block;
+  content: '';
+  width: 50px;
+  height: 50px;
+  background: url(image/carbon_location-filled.svg) no-repeat;
+  position:absolute;
+  top:50%;
+  margin-top: -10px;
+  margin-left: -25px;
+
+}
+
+
+.text-20{
+color:#413E3A ;
+font-size: 16px;
+line-height:2; 
+margin-left: 10px;
+}
+
+.block-8{
+margin-top: 47px;
+
+}
+
+
+.block-9{
+
+margin-top: 179px;
+
+
+}
+
+.block-10{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height:355px ;
+  width: 1200px;
+  background-color: #F9F6F1;
+}
+
+
+.text-21{
+  font-size:32px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.block-11{
+margin-top: 46px;
+height: 45px;
+width: 440px;
+background-color: #FAFAFA;
+border-color:#E2E1DF;
+border-width:1px;
+border-style:solid;
+}
+
+.text-22{
+
+margin-top: 10px;
+margin-left: 17px;
+font-size: 16px;
+color:#93908B;
+
+}
+
+
+.btn-5{
+  margin-top:33px ;
+  position: relative;
+  border-color:#F9F6F1 #F9F6F1 #B69D78  #F9F6F1; 
+  border-width:1px;
+  border-style:solid;
+  padding: 7px 10px 7px 10px;
+  color: #19150F;
+  text-decoration: none;
+}
+
+.btn-5:hover{
+
+  color: #19150F;
+  border-color:#F9F6F1 #F9F6F1 #8A5461  #F9F6F1; 
+  border-width:1px;
+  border-style:solid;
+}
+
+
+.block-12{
+margin-bottom: 189px;
 }
 
 
 
 
+
+.logo-2{
+text-align: center;
+max-width: 100%;
+padding: 0%;
+margin-top: 90px;
+
+}
+
+
+
+.flex-6{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: right;
+  padding: 0;
+  margin-right:-20px ;
+  margin-left:200px ;
+
+}
+
+.block-13{
+  margin-top:110px;
+}
+
+.navbar-2{
+  padding:0%;
+  margin-top:90px;
+}
