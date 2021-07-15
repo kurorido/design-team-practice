@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <style>
+        .main-section {
+            height: 845px;
+            position: relative;
+            width: 100%;
+            height: 800px;
+            /*視差滾動，在滿版背景區塊使用fixed*/
+            background-image: url(../DEEPLIGHT/img/hero-bg-free-img.jpg);
+            background-attachment: fixed; 
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*背景色遮罩*/
+            background-color: rgba(82, 82, 82, 0.6);
+            background-blend-mode: multiply;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-section-content {
+            text-align: center;
+            color: #fff;
+        }
+
+        .main-section-subtitle {}
+        .main-section-title {}
+        .main-section-btn {}
+
+        .cara-btn {
+            border-width: 1px;
+            border-style: solid;
+            font-size: 16px;
+            padding: 12px 34px;
+        }
+
+        .cara-btn--primary {
+            border-color: green;
+        }
+
+        .cara-btn--secondary {
+            border-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <section class="main-section">
+        <div class="main-section-content">
+            <div class="main-section-subtitle">delightful experiences</div>
+            <div class="main-section-title">Welcome to “ Deeplight Restaurant ”</div>
+            <a class="main-section-btn cara-btn cara-btn--primary">Reservation</a>
+        </div>
+    </section>
+
+    <section>
+        <a class="cara-btn cara-btn--secondary">Test</a>
+    </section>
+
+</body>
+</html>
