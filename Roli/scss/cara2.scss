@@ -1,0 +1,53 @@
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+$primary-color: blue;
+$h1-size: 20px;
+$h2-size: 20px;
+
+
+.menu-section-menu-item {
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &-title,
+    &-price  {
+        font-size: 20px;
+        color: $primary-color;
+    }
+    
+    &-dots {
+        flex-grow: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-bottom-style: dotted;
+        border-bottom-width: 2px;
+        height: 0;
+    }
+    
+    &-subtitle {
+        font-size: 16px;
+    }
+    
+    
+    & + &  {
+        margin-top: 30px;
+    }
+}
+
+
+.row {
+    display: flex;
+}
+
+.col-6 {
+    width: 50%;
+}

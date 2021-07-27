@@ -16,7 +16,7 @@
     width: 1440px;
     height: 100%;
     margin: 0 auto;
-    word-wrap:break-word;
+    
 
 }
 
@@ -57,8 +57,8 @@
     color: #EB5058;
 }
 
-.section-1{
-    position: relative;
+.main-section{
+    
     width: 100%;
     height: 800px;
     /*視差滾動，在滿版背景區塊使用fixed*/
@@ -69,17 +69,16 @@
     /*背景色遮罩*/
     background-color: rgba(82, 82, 82, 0.6);
     background-blend-mode: multiply;
-
-    min-height: 600px;
+    /*父層置中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .row-2{
-    position: absolute;
+    text-align: center;
     width: 724px;
     height: 234px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
 }
 
 .row-2 h4{
@@ -87,14 +86,13 @@
     font-family:Didot, serif;
     color: #ffffff;
     padding-bottom: 34px;
-    text-align: center;
-}
+}    
 
 .row-2 h3{
     font-size: 36px;
     color: #ffffff;
     padding-bottom: 34px;
-    text-align: center;
+    
 }
 
 .btn{
@@ -119,33 +117,39 @@
 }
 
 .section-2{
-    position: relative;
     width: 100%;
     height: 1100px;
+    /*父層置中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.row-3{
-    position: absolute;
-    width: 1000px;
-    height: auto;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    z-index: 99;   
-
-}
-
-.line{
+.red-line{
     display: block;
     border-style: none;
     width: 1px;
     height: 100px;
     background-color:#EB5058 ;
     margin:0px auto;
-    
-
+    z-index: 99;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 
+.section-2-content{
+    width: 1100px;
+    height: auto;
+    text-align: center;
+}
+
+.section-2-top-img{
+    width: 1100px;
+    height: 502px;
+    padding: 50px 0;
+    
+}
 .img{
     width: 595px;
     height: 402px;
@@ -153,30 +157,28 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin:50px auto;
-}
+    margin:0px auto;
 
-.row-3 h4{
+}
+.section-2-content h4{
     font-size: 24px; 
     font-family:Didot, serif;
     color: #000000;
     padding-bottom: 40px;
-    text-align: center;
     
 }
 
-.row-3 h3{
+.section-2-content h3{
     font-size: 36px;
     color: #000000;
     padding-bottom: 40px;
-    text-align: center;
+    
 }
-.row-3 p{
+.section-2-content p{
     font-size: 16px; 
     font-family:Didot, serif;
     color: #9E9E9E;
     padding-top: 40px;
-    text-align: center;
     line-height: 28px;
 }
 
@@ -185,6 +187,16 @@
     height: 1px;
     background-color:#EB5058 ;
     margin:0px auto;
+    
+}
+
+.section-2-btn{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 85px;
 }
 
 .btn-2{
@@ -193,9 +205,7 @@
     border: 1px solid #EB5058;
     font-size: 16px;
     color: #EB5058;
-    /*位置置中*/
-    margin:40px auto;
-    /*文字水平垂直置中，ling-height要對應height高度*/
+    /*文字水平垂直置中*/
     text-align: center;
     line-height: 44px;
 }
@@ -207,20 +217,21 @@
 }
 
 .section-3{
-    position: relative;
     width: 100%;
-    height: 455px;
-}
-.row-4{
-    position: absolute;
-    width: 800px;
-    height: 425px;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50% , -50%);  
+    height: 400px;
+    /*父層置中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.row-4 h4{
+.section-3-content{
+    width: 800px;
+    height: 370px;
+    text-align: center; 
+}
+
+.section-3-content h4{
     font-size: 24px; 
     font-family:Didot, serif;
     color: #000000;
@@ -229,13 +240,13 @@
     text-align: center;  
 }
 
-.row-4 h3{
+.section-3-content h3{
     font-size: 36px;
     color: #000000;
     padding-bottom: 40px;
     text-align: center;
 }
-.row-4 p{
+.section-3-content p{
     font-size: 16px; 
     font-family:Didot, serif;
     color: #9E9E9E;
@@ -245,19 +256,18 @@
 }
 
 .section-4{
-    position: relative;
     width: 100%;
-    height: 750px;
+    height: 670px;
+    /*父層置中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.row-5{
-    position: absolute;
-    width: 1040px;
+.section-4-content{
+    width: 1100px;
     height: 640px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%); 
-    
     
 }
 
@@ -266,17 +276,33 @@
     float: left;
     width: 50%;
     height: 100%;
-    
+    padding: 30px;
+
 }
 
 .menu-title{
     font-size: 30px;
-    padding-bottom: 20px;
+    padding-top:70px;
+    padding-bottom: 30px;
 }
 
 .menu-item{
-    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 30px;
+    
 }
+
+.menu-dots{
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    height: 0;
+}
+
 .menu-mane{
     font-size: 20px;
     font-family:Didot, serif;
@@ -286,7 +312,7 @@
     float: right;
     font-size: 20px;
     font-family:Didot, serif;
-    margin-top: -23px;
+
 }
 
 .menu-description{
@@ -298,9 +324,10 @@
 
 .menu-pic-right{
     display:inline-block;
-    float: right;
     width: 50%;
     height: 100%;
+    padding: 30px;
+    
 }
 
 .img-2{
@@ -310,39 +337,37 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    
 }
+
 .section-5{
-    position: relative;
     width: 100%;
-    height: 750px;
+    height: 670px;
+    /*父層置中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.row-6{
-    margin-top: 20px;
-    position: absolute;
-    width: 1040px;
+.section-5-content{
+    width: 1100px;
     height: 640px;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50% , -50%); 
-    
     
 }
-
 .menu-right{
     display: block;
     float: right;
     width: 50%;
     height: 100%;
-    
+    padding: 30px;
 }
 
 .menu-pic-left{
     display:inline-block;
-    float: left;
     width: 50%;
     height: 100%;
+    padding: 30px;
+    
 }
 
 .img-3{
@@ -352,38 +377,38 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    
 }
 
 .section-6{
-    position: relative;
     width: 100%;
-    height: 600px;
+    height: 650px;
+    /*父層置中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-image: url(img/bg-graphic-01-free-img.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    
-}
-.row-7{
-    margin-top: 20px;
-    position: absolute;
-    width: 800px;
-    height: 358px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%); 
-    
+
+    margin: 30px 0 96px 0;    
 }
 
-.row-7 h3{
+.section-6-content{
+    width: 800px;
+    height: 450px;
+
+    text-align: center;
+    
+}
+.section-6-content h3{
     font-size: 36px;
     color: #000000;
     padding-bottom: 40px;
     text-align: center;
 }
-
-.row-7 p{
+.section-6-content p{
     font-size: 16px; 
     font-family:Didot, serif;
     color: #9E9E9E;
@@ -391,7 +416,6 @@
     text-align: center;
     line-height: 28px;
 }
-
 .leaf{
     background-image: url(img/Leafs.png);
     width: 66px;
@@ -413,31 +437,151 @@
     padding-bottom: 40px;
 }
 
-/*.bg-fork{
-    
-    width: 100%;
-    height: 100%;
-    background-image: url(img/bg-graphic-01-free-img.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 0;
-    
-
-}*/
+.sign{
+    font-size: 16px;
+    color: #000000;
+}
 
 .section-7{
     width: 100%;
-    height: 200px;
-    padding: 50px auto;
+    height: 800px;
+    /*父層置中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container .line-2{
-    display: block;
-    border-style: none;
-    width: 1px;
-    height: 100px;
-    background-color:#EB5058 ;
-    margin:0px auto;
+.section-7-content{
+    width: 1100px;
+    height: auto;
+    text-align: center;
+}
 
+.section-7-content h4{
+    font-size: 24px; 
+    font-family:Didot, serif;
+    color: #000000;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;  
+}
+
+.section-7-content h3{
+    font-size: 36px;
+    color: #000000;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.section-7-top-img{
+    width: 1100px;
+    height: 502px;
+    padding: 50px 0;
+    
+}
+.section-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/Food\ Image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:0px auto;
+}
+
+.resch-us-section{
+    width: 100%;
+    height: 685px;
+
+    /*視差滾動，在滿版背景區塊使用fixed*/
+    background-image: url(img/ingredients-cooking-gray-concrete.jpg);
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*背景色遮罩*/
+    background-color: rgba(255, 255, 255, 0.808);
+    background-blend-mode: multiply;
+    /*父層置中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resch-us-section-content{
+    width: 400px;
+    height: 326px;
+    text-align: center;
+}
+.resch-us{
+    font-size: 16px;
+    color: #9E9E9E;
+    margin: 20px 0 20px 0;
+    
+}
+.phone-number{
+    font-size: 50px;
+    font-family:Didot, serif;
+    color: #EB5058;
+    
+}
+.addres-title{
+    font-size: 16px;
+    color: #9E9E9E;
+    margin: 20px 0 10px 0;
+    
+}
+.address{
+    font-size: 16px;
+    font-family:Didot, serif;
+    color: black;
+    margin-bottom: 20px;
+    
+}
+
+.resch-us-section-icon{
+    display: flex;
+    width: 100px;
+    height: 25px;
+    margin: 0 auto;
+}
+.icon-fb{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(img/facebook-logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.icon-ig{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(img/twitter.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.icon-mail{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(img/gmail.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    color: #3a3a3a;
+    background-color:#eeeeee ;
+    text-align: center;
+    line-height: 50px;
 }
