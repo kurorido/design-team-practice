@@ -17,7 +17,6 @@
     height: 100%;
     margin: 0 auto;
     
-
 }
 
 .logo-brand{
@@ -33,13 +32,16 @@
     display: flex;  
     width: 100%;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-item{
     width: 351px;
     height: 100%;
     margin: 0 auto;
-    
+    text-align: center;
 }
 
 .col-1,.col-2,.col-3,.col-4,.col-5{
@@ -94,7 +96,7 @@
     padding-bottom: 34px;
     
 }
-
+                 
 .btn{
     display: block;
     width: 148px;
@@ -136,6 +138,23 @@
     top: 44%;
     left: 50%;
     transform: translate(-50% , -50%);
+}
+
+.red-line-section{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red-line-second{
+    display: block;
+    border-style: none;
+    width: 1px;
+    height: 100px;
+    background-color:#EB5058 ;
+    margin:0px auto;
+    
 }
 
 .section-2-content{
@@ -196,7 +215,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 85px;
+    
 }
 
 .btn-2{
@@ -398,7 +417,6 @@
 .section-6-content{
     width: 800px;
     height: 450px;
-
     text-align: center;
     
 }
@@ -584,4 +602,208 @@
     background-color:#eeeeee ;
     text-align: center;
     line-height: 50px;
+}
+
+/* 適用螢幕寬度小於480px的裝置（當螢幕小於480px時 */
+@media screen and (max-width:480px){
+
+    .container{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    
+    .nav-item{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .col-1,.col-2,.col-3,.col-4,.col-5{
+        text-decoration: none;
+        font-size: 14px;
+        color: #9D9B99;
+        text-align: center;
+        font-family:Didot, serif;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .main-section{
+        width: 100%;
+        height: 600px;
+    }
+
+    .row-2 h3{
+        padding:0 10px 0 10px;
+        font-size: 36px;
+        color: #ffffff;
+        padding-bottom: 34px;
+        white-space: pre-wrap;
+    }
+
+    .section-2 {
+        height: 1195px;
+    }
+
+    .section-2-content{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .section-2-top-img{
+        width: 100%;
+        height: 100%;
+        padding: 50px 0;
+    }
+
+    .img{
+        width: 360px;
+        height: 320px;
+    }
+
+    .section-2-content h3{
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: pre-wrap;
+    }
+
+    .section-2-content p{
+        padding:40px 10px 15px 10px;
+        white-space: pre-wrap;
+    }
+
+    .section-3 {
+        height:470px;
+    }
+
+    .section-3-content {
+        height: 100%;
+    }
+
+    .section-3-content h3{
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: pre-wrap;
+    }
+
+    .section-3-content p{
+        padding: 40px 10px 15px 10px;
+        white-space: pre-wrap;
+    }
+
+    .red-line-section{
+        width: 100%;
+        height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-4{
+        height: 750px;
+    }
+
+    .menu-item{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-top: 10px;
+    }
+
+    .menu-left {
+        width: 100%;
+        height: 60%;
+        background-color: #ecececa2;
+        padding: 10px;
+        transform:translate(0px,320px);
+    }
+
+    .menu-title{
+        font-size: 20px;
+        padding: 20px 0 20px 0;
+    }
+
+    .menu-dots{
+        display: none;
+    }
+    
+    .menu-mane{
+        font-size: 16px;
+    }
+    
+    .menu-price{
+        font-size: 16px;
+    }
+    
+    .menu-description{
+        font-size: 12px;
+    }
+
+    .menu-pic-right{
+        display: block;
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+    }
+
+    .section-5{
+        height: 770px;
+    }
+
+    .menu-pic-left{
+        display: block;
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+    }
+
+    .menu-right {
+        width: 100%;
+        height: 60%;
+        background-color: #ecececa2;
+        padding: 10px;
+        transform:translate(0px,320px);
+    }
+
+    .section-6 {
+        margin: 50px 0 50px 0;
+    }
+
+    .section-6-content h3 {
+        padding: 0 10px 0 10px;
+        white-space: pre-wrap;
+    }
+
+    .section-6-content p {
+        padding: 0 10px 0 10px;
+        white-space: pre-wrap;
+    }
+
+    .section-7-top-img {
+        width: 100%;
+        height: 250px;
+        padding: 0;
+    }
+
+    .section-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-7 {
+        height: 600px;
+    }
+
+    .phone-number {
+        font-size: 42px;
+    }
+    .footer {
+        height: 40px;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0 10px 0 10px;
+    }
 }
