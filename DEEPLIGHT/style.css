@@ -6,6 +6,13 @@
     list-style: none;
 }
 
+/* 使用 keyframes 來決定物件的開始和結束狀態 */
+@keyframes fadein {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 .logo{
     display: flex;           
     width: 100%;
@@ -13,7 +20,7 @@
 }
 
 .container{
-    width: 1440px;
+    max-width: 1440px;
     height: 100%;
     margin: 0 auto;
     
@@ -79,7 +86,7 @@
 
 .row-2{
     text-align: center;
-    width: 724px;
+    max-width: 724px;
     height: 234px;
 }
 
@@ -88,15 +95,18 @@
     font-family:Didot, serif;
     color: #ffffff;
     padding-bottom: 34px;
+    /*淡入淡出*/
+    animation: fadein 6s ease;
 }    
 
 .row-2 h3{
     font-size: 36px;
     color: #ffffff;
     padding-bottom: 34px;
-    
+    /*淡入淡出*/
+    animation: fadein 6s ease;
 }
-                 
+
 .btn{
     display: block;
     width: 148px;
