@@ -51,7 +51,7 @@ li a:hover:not(.active) {
 }
 
 .text-2 {
-  margin-top: 52px;
+  margin-top: 52pxs;
   color: #19150F;
   font-size: 64px;
 }
@@ -341,6 +341,7 @@ li a:hover:not(.active) {
   text-decoration: none;
   color: #19150F;
   padding: 7px 40px 7px 10px;
+  cursor: pointer;
 }
 
 .btn-4::after {
@@ -356,10 +357,8 @@ li a:hover:not(.active) {
 }
 
 .btn-4:hover::after {
-  content: url(/Zora_20210701/image/Vector.svg);
-  margin-left: 17px;
-  position: absolute;
-  margin-top: 2px;
+  background: url(/Zora_20210701/image/Vector.svg) no-repeat;
+  margin-top: -4px;
 }
 
 .btn-4:hover {
@@ -447,7 +446,7 @@ li a:hover:not(.active) {
   content: "";
   width: 50px;
   height: 50px;
-  background: url(/Zora_20210701/image/carbon_location-filled.svg) no-repeat;
+  background: url(image/carbon_location-filled.svg) no-repeat;
   position: absolute;
   top: 50%;
   margin-top: -10px;
