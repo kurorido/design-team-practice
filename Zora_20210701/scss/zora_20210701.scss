@@ -82,6 +82,7 @@
   .btn-1:hover{
     border: 1px solid #8A5461;
     color: #19150F;
+    cursor: pointer;
   }
   
   .btn-1::after{
@@ -90,7 +91,7 @@
     display: block;
     width: 50%;
     height: 50%;
-    background:url(/image/grommet-icons_form-next-link.svg) no-repeat;
+    background:url(/Zora_20210701/image/grommet-icons_form-next-link.svg) no-repeat;
     position:absolute;
     top:50%;
     margin-top: -10px; 
@@ -253,7 +254,7 @@
     content: '';
     width: 50%;
     height: 50%;
-    background: url(/image/grommet-icons_form-next-link.svg) no-repeat;
+    background: url(/Zora_20210701/image/grommet-icons_form-next-link.svg) no-repeat;
     position:absolute;
     top:50%;
     margin-top: -10px; 
@@ -324,6 +325,7 @@
     border-color:#FFFF #FFFF #8A5461  #FFFF; 
     border-width:1px;
     border-style:solid;
+    cursor: pointer;
   }
   
   .btn-3::after{
@@ -331,7 +333,7 @@
     content: '';
     width: 50%;
     height: 50%;
-    background: url(/image/grommet-icons_form-next-link.svg) no-repeat;
+    background: url(/Zora_20210701/image/grommet-icons_form-next-link.svg) no-repeat;
     position:absolute;
     top:50%;
     margin-top: -10px; 
@@ -380,7 +382,7 @@
   .btn-4::after{
     display:block;
     content:'';
-    background: url(/image/grommet-icons_form-next-link.svg) no-repeat;
+    background: url(/Zora_20210701/image/grommet-icons_form-next-link.svg) no-repeat;
     height: 20px;
     width: 50px;
     position:absolute;
@@ -390,17 +392,16 @@
   }
   
   .btn-4:hover::after{
-  
-    content: url(/image/Vector.svg);
-    margin-left: 17px ;
-    position:absolute;
-    margin-top: 2px;
+    background: url(/Zora_20210701/image/Vector.svg) no-repeat;
+    margin-top: -4px;
+    cursor: pointer;
     }
   
   
   
   .btn-4:hover{
     color: #B69D78;
+    cursor: pointer;
   }
   
   
