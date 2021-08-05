@@ -1,3 +1,14 @@
+@media only screen and (max-width: 375px) {
+  header {
+    height: 1175px;
+  }
+}
+.header {
+  background-color: #F9F6F1;
+  height: 960px;
+  background-size: cover;
+}
+
 .flex-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,6 +87,7 @@ li a:hover:not(.active) {
 .btn-1:hover {
   border: 1px solid #8A5461;
   color: #19150F;
+  cursor: pointer;
   cursor: pointer;
 }
 
@@ -221,6 +233,7 @@ li a:hover:not(.active) {
   border-color: #FFFF #FFFF #8A5461 #FFFF;
   border-width: 1px;
   border-style: solid;
+  cursor: pointer;
 }
 
 .btn-2::after {
@@ -497,7 +510,7 @@ li a:hover:not(.active) {
   line-height: 1.5;
 }
 
-.block-11 {
+input[type=text] {
   margin-top: 46px;
   height: 45px;
   width: 440px;
@@ -505,6 +518,7 @@ li a:hover:not(.active) {
   border-color: #E2E1DF;
   border-width: 1px;
   border-style: solid;
+  padding: 12px 10px;
 }
 
 .text-22 {
@@ -528,8 +542,7 @@ li a:hover:not(.active) {
 .btn-5:hover {
   color: #19150F;
   border-color: #F9F6F1 #F9F6F1 #8A5461 #F9F6F1;
-  border-width: 1px;
-  border-style: solid;
+  cursor: pointer;
 }
 
 .block-12 {
