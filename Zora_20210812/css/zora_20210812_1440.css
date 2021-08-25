@@ -1,8 +1,4 @@
 /*Initial setting*/
-h2 {
-  font-size: 45px;
-}
-
 /* herder*/
 .education-header {
   position: relative;
@@ -10,12 +6,12 @@ h2 {
   background: url(/Zora_20210812/images/bg-01-free-img.jpeg);
   background-size: cover;
   border-bottom-right-radius: 150px;
+  background-attachment: fixed;
 }
 
 .education-header-mask {
   height: 710px;
-  background: linear-gradient(290deg, #007991, #2E4A66);
-  opacity: 92%;
+  background: linear-gradient(290deg, rgba(0, 121, 145, 0.872), #2E4A66);
   border-bottom-right-radius: 150px;
 }
 
@@ -23,12 +19,14 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 24px;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .education-header-logo {
@@ -39,6 +37,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-grid-column-align: right;
       justify-self: right;
 }
@@ -90,7 +90,7 @@ li a:hover:not(.active) {
 
 .education-header-content {
   margin-top: 100px;
-  margin-left: 300px;
+  margin-left: 100px;
 }
 
 .education-header-content-video {
@@ -129,6 +129,8 @@ li a:hover:not(.active) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -189,8 +191,8 @@ li a:hover:not(.active) {
 
 /*education-technologies-container*/
 .education-technologies-container {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 100px;
   margin-bottom: 167px;
 }
@@ -211,6 +213,8 @@ li a:hover:not(.active) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .education-technologies-img ul li {
@@ -231,6 +235,8 @@ li a:hover:not(.active) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -261,11 +267,14 @@ li a:hover:not(.active) {
   background-color: #FFAB5E;
   border-style: none;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: inline-block;
   border-radius: 100px;
   font-size: 14px;
   color: #FFFFFF;
-  padding: 20px 32px;
+  padding: 15px 40px;
   cursor: pointer;
 }
 
@@ -278,6 +287,8 @@ li a:hover:not(.active) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -300,6 +311,7 @@ li a:hover:not(.active) {
 }
 
 .education-popular-courses-list-content p {
+  font-size: 15px;
   padding-bottom: 22px;
 }
 
@@ -316,7 +328,7 @@ li a:hover:not(.active) {
   border-radius: 4px;
   font-size: 14px;
   color: #FFFFFF;
-  padding: 15px 100px;
+  padding: 15px 130px;
   cursor: pointer;
 }
 
@@ -344,14 +356,133 @@ p,
   margin-left: 21px;
 }
 
-.education-career-container {
+.education-career {
   background: url(/Zora_20210812/images/background1.jpeg);
   background-size: cover;
+  background-attachment: fixed;
   height: 374px;
 }
 
-.education-career-container-mask {
-  background: linear-gradient(290deg, #2E4A66, #007991);
-  opacity: 92%;
+.education-career-mask {
+  background: linear-gradient(290deg, #2e4a66e5, #007991e5);
   height: 374px;
+}
+
+.education-career-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 100px;
+}
+
+.education-career-container-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.education-career-container-skill-list {
+  margin-right: 50px;
+}
+
+.education-career-container-skill-list h1 {
+  font-size: 25px;
+  color: #FFFFFF;
+  padding-top: 17px;
+}
+
+.education-career-container-skill-list p {
+  font-size: 15px;
+  color: #FFFFFF;
+  margin-left: 0;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
+
+.separator-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.parallelogram {
+  width: 25.5px;
+  height: 6px;
+  -webkit-transform: skew(-50deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  background: #FF9635;
+  margin-right: 10px;
+}
+
+.education-career-container-skill-block {
+  height: 274px;
+  width: 400px;
+  background-color: #FFFFFF;
+}
+
+.education-career-container-skill-block p {
+  color: #007991;
+  margin-left: 52px;
+  margin-top: 37px;
+  font-weight: bold;
+}
+
+.education-career-container-skill-block h2 {
+  font-size: 25px;
+  margin-left: 52px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.education-career-container-skill-block-star {
+  font-size: 15px;
+  position: relative;
+  margin-left: 70px;
+}
+
+.education-career-container-skill-block-star:hover {
+  color: #FF9635;
+  cursor: pointer;
+}
+
+.education-career-container-skill-block-star::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: url(/Zora_20210812/images/Polygon4.svg) no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  left: -15px;
+}
+
+.education-career-container-skill-block-star:hover::before {
+  background: url(/Zora_20210812/images/Polygon3.svg) no-repeat;
+}
+
+.education-choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 100px;
+  margin-top: 169px;
+}
+
+.education-choose p {
+  margin-left: 0;
 }

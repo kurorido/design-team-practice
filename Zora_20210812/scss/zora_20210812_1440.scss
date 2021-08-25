@@ -7,12 +7,6 @@
   $button-hover-color:#FF9635;
   $content-text-color:#22323D;
 
-  
-  h2{
-    font-size: 45px;
-    
-  }
-  
 
 
   /* herder*/
@@ -24,23 +18,24 @@
   background:url(/Zora_20210812/images/bg-01-free-img.jpeg);
   background-size:cover;
   border-bottom-right-radius:150px;
+  background-attachment: fixed;
   }
 
 
 .education-header-mask{
   height: 710px;
-  background: linear-gradient(290deg,#007991,#2E4A66);
-  opacity: 92%;
+  background: linear-gradient(290deg,rgba(0, 121, 145, 0.872),#2E4A66);
   border-bottom-right-radius:150px;
 }
 
 
 .education-header-navbar{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 24px;
-  margin-left:300px;
-  margin-right:300px;
+  margin-left:100px;
+  margin-right:100px;
 }
     
 .education-header-logo{
@@ -51,6 +46,7 @@
 .education-header-navbar-menu{
 
 display: flex;
+flex-wrap: wrap;
 justify-self: right;
 
 }
@@ -111,7 +107,7 @@ li a:hover:not(.active) {
 
 .education-header-content{
   margin-top: 100px;
-  margin-left: 300px;
+  margin-left: 100px;
 }
 
 
@@ -155,6 +151,7 @@ margin-top: 30px;
 .education-header-content-course{
 margin-top: 48px;
 display: flex;
+flex-wrap: wrap;
 justify-content:flex-start;
 align-items: center;
 }
@@ -228,8 +225,8 @@ left:-15px
 
 
 .education-technologies-container{
-margin-left: 300px;
-margin-right: 300px;
+margin-left: 100px;
+margin-right: 100px;
 margin-top: 100px;
 margin-bottom:167px;
 }
@@ -244,7 +241,7 @@ align-items: center;
 
 .education-technologies-img{
 display: flex;
-
+flex-wrap: wrap;
 }
 
 
@@ -268,6 +265,7 @@ overflow: hidden;
 .education-technologies-courses{
 margin-top: 80px;
 display: flex; 
+flex-wrap: wrap;
 justify-content: space-between;
 }
 
@@ -305,11 +303,12 @@ margin: 0;
 background-color: $second-color;
   border-style:none;
   text-align: center;
+  justify-content: center;
   display: inline-block;
   border-radius:100px;
   font-size: 14px;
   color: #FFFFFF;
-  padding: 20px 32px;
+  padding: 15px 40px;
   cursor: pointer;
 
 }
@@ -321,6 +320,7 @@ background-color: $second-color;
 .education-popular-courses-list{
   margin-top: 120px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -342,6 +342,7 @@ padding-bottom: 11px;
 
 
 .education-popular-courses-list-content p{
+font-size: 15px;
 padding-bottom:22px ;
 }
 
@@ -362,7 +363,7 @@ padding-bottom:22px ;
   border-radius:4px;
   font-size: 14px;
   color: #FFFFFF;
-  padding: 15px 100px;
+  padding: 15px 130px;
   cursor: pointer;
 
 }
@@ -400,15 +401,142 @@ margin-left: 21px;
 }
 
 
-.education-career-container{
+.education-career{
   background: url(/Zora_20210812/images/background1.jpeg);
   background-size:cover;
+  background-attachment: fixed;
   height:374px;
 }
 
-.education-career-container-mask{
-  background: linear-gradient(290deg,#2E4A66,#007991);
-  opacity: 92%;
+.education-career-mask{
+  background: linear-gradient(290deg,#2e4a66e5,#007991e5);
   height:374px;
+
 }
 
+.education-career-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-left: 100px;
+margin-right: 100px;
+padding-top: 100px;
+}
+
+
+.education-career-container-skill{
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.education-career-container-skill-list{
+margin-right: 50px;
+}
+
+.education-career-container-skill-list h1{
+font-size:25px;
+color: #FFFFFF;
+padding-top:17px ;
+}
+
+.education-career-container-skill-list p{
+font-size:15px;
+color: #FFFFFF;
+margin-left: 0;
+line-height: 25px;
+letter-spacing:0.5px;
+}
+
+
+.separator-line{
+display:flex;
+flex-wrap: wrap;
+}
+  
+  
+  
+.parallelogram{
+width: 25.5px;
+height: 6px;
+    -webkit-transform: skew(-50deg);
+       -moz-transform: skew(-20deg);
+         -o-transform: skew(-20deg);
+background:$button-hover-color;
+margin-right: 10px;
+  
+  }
+
+
+
+.education-career-container-skill-block{
+
+height:274px;
+width: 400px;
+background-color: #FFFFFF;
+}
+
+
+.education-career-container-skill-block p{
+
+color: $primary-color;
+margin-left: 52px;
+margin-top: 37px;
+font-weight:bold;
+}
+
+
+.education-career-container-skill-block h2{
+
+font-size: 25px;
+margin-left: 52px;
+line-height: 30px;
+margin-bottom: 25px;
+font-weight:bold;
+}
+
+
+.education-career-container-skill-block-star{
+
+font-size: 15px; 
+position: relative;
+margin-left: 70px;
+
+ }
+ 
+ .education-career-container-skill-block-star:hover{
+ 
+color: $button-hover-color;
+cursor: pointer;
+}
+ 
+ .education-career-container-skill-block-star::before{
+ content:"";  
+width: 9px;
+height: 9px;
+background: url(/Zora_20210812/images/Polygon4.svg) no-repeat;
+position: absolute;
+top: 50%;
+margin-top: -4px;
+left:-15px
+}
+ 
+ .education-career-container-skill-block-star:hover::before{
+ 
+background: url(/Zora_20210812/images/Polygon3.svg) no-repeat;  
+}
+
+
+.education-choose{
+display:flex;
+flex-wrap: wrap;
+margin-left: 100px;
+margin-top:169px ;
+}
+
+
+
+.education-choose p{
+
+margin-left: 0;
+}
