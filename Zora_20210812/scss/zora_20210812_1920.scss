@@ -506,7 +506,7 @@ color: $button-hover-color;
 cursor: pointer;
 }
  
- .education-career-container-skill-block-star::before{
+.education-career-container-skill-block-star::before{
  content:"";
 width: 9px;
 height: 9px;
@@ -618,13 +618,45 @@ background-color:#ECF0F2 ;
 
 .education-comment-title{
 
+display: flex;
+justify-content: space-between;
 margin-left: 300px;
 margin-right: 300px;
-margin-top: 75px;
+padding-top: 75px;
+
 
 }
 
 .education-comment-title p{
 
   margin: 0;
+}
+
+.education-comment-score{
+
+display: flex;
+}
+
+.education-comment-score h1{
+
+font-size:90px ;
+color: $content-text-color;
+margin: 0;
+}
+
+
+.education-comment-content{
+margin-left: 300px;
+margin-right: 300px;
+}
+
+.education-comment-content-block{
+  width: 568px;
+  height: 210px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  }
+
+.education-comment-content-block p{
+padding-top: 59px;
 }

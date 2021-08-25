@@ -543,11 +543,45 @@ p,
 }
 
 .education-comment-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: 300px;
   margin-right: 300px;
-  margin-top: 75px;
+  padding-top: 75px;
 }
 
 .education-comment-title p {
   margin: 0;
+}
+
+.education-comment-score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.education-comment-score h1 {
+  font-size: 90px;
+  color: #22323D;
+  margin: 0;
+}
+
+.education-comment-content {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.education-comment-content-block {
+  width: 568px;
+  height: 210px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+}
+
+.education-comment-content-block p {
+  padding-top: 59px;
 }
