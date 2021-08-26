@@ -7,11 +7,19 @@ $second-color:#FFAB5E;
 $button-hover-color:#FF9635;
 $content-text-color:#22323D;
  
+.container{
+  background-color: darkgoldenrod;
+  width:1200px;
+  height:auto;
+  margin:0,auto;
+  }
+  
 
 
 
 
 /* herder*/
+
 
 
 .education-header{
@@ -33,10 +41,7 @@ border-bottom-right-radius:150px;
 
 .education-header-navbar{
 display: flex;
-justify-content: space-between;
 padding-top: 24px;
-margin-left:300px;
-margin-right:300px;
 }
 
 .education-header-logo{
@@ -47,7 +52,6 @@ height:21px;
 .education-header-navbar-menu{
 
 display: flex;
-justify-self: right;
 
 }
 
@@ -107,7 +111,7 @@ background-color: $button-hover-color;
 
 .education-header-content{
 margin-top: 100px;
-margin-left: 300px;
+
 }
 
 
@@ -453,14 +457,11 @@ display: flex;
 
 
 .parallelogram{
-width: 25.5px;
-height: 6px;
--webkit-transform: skew(-50deg);
- -moz-transform: skew(-20deg);
- -o-transform: skew(-20deg);
-background:$button-hover-color;
-margin-right: 10px;
-
+  width: 25.5px;
+  height: 6px;
+  transform: skew(20deg);
+  background:$button-hover-color;
+  margin-right: 10px;
 }
 
 

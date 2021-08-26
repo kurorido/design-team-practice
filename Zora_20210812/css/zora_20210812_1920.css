@@ -1,4 +1,11 @@
 /*Initial setting*/
+.container {
+  background-color: darkgoldenrod;
+  width: 1200px;
+  height: auto;
+  margin: 0, auto;
+}
+
 /* herder*/
 .education-header {
   position: relative;
@@ -19,12 +26,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-top: 24px;
-  margin-left: 300px;
-  margin-right: 300px;
 }
 
 .education-header-logo {
@@ -35,8 +37,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-grid-column-align: right;
-      justify-self: right;
 }
 
 .education-header-navbar-menu ul li {
@@ -86,7 +86,6 @@ li a:hover:not(.active) {
 
 .education-header-content {
   margin-top: 100px;
-  margin-left: 300px;
 }
 
 .education-header-content-video {
@@ -403,9 +402,8 @@ p,
 .parallelogram {
   width: 25.5px;
   height: 6px;
-  -webkit-transform: skew(-50deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
   background: #FF9635;
   margin-right: 10px;
 }

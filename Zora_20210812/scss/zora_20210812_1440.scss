@@ -458,9 +458,7 @@ display:flex;
 .parallelogram{
 width: 25.5px;
 height: 6px;
-    -webkit-transform: skew(-50deg);
-       -moz-transform: skew(-20deg);
-         -o-transform: skew(-20deg);
+transform: skew(20deg);
 background:$button-hover-color;
 margin-right: 10px;
   
