@@ -1,4 +1,12 @@
 /*Initial setting*/
+.container {
+  background-color: darkgoldenrod;
+  width: 1200px;
+  height: auto;
+  margin: 0, auto;
+  color: #357EBD;
+}
+
 /* herder*/
 .education-header {
   position: relative;
@@ -19,12 +27,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-top: 24px;
-  margin-left: 300px;
-  margin-right: 300px;
 }
 
 .education-header-logo {
@@ -35,8 +38,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-grid-column-align: right;
-      justify-self: right;
 }
 
 .education-header-navbar-menu ul li {
@@ -86,7 +87,6 @@ li a:hover:not(.active) {
 
 .education-header-content {
   margin-top: 100px;
-  margin-left: 300px;
 }
 
 .education-header-content-video {
@@ -403,9 +403,8 @@ p,
 .parallelogram {
   width: 25.5px;
   height: 6px;
-  -webkit-transform: skew(-50deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
   background: #FF9635;
   margin-right: 10px;
 }
@@ -543,11 +542,45 @@ p,
 }
 
 .education-comment-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: 300px;
   margin-right: 300px;
-  margin-top: 75px;
+  padding-top: 75px;
 }
 
 .education-comment-title p {
   margin: 0;
+}
+
+.education-comment-score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.education-comment-score h1 {
+  font-size: 90px;
+  color: #22323D;
+  margin: 0;
+}
+
+.education-comment-content {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.education-comment-content-block {
+  width: 568px;
+  height: 210px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+}
+
+.education-comment-content-block p {
+  padding-top: 59px;
 }
