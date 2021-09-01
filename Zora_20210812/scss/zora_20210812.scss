@@ -8,16 +8,30 @@ $button-hover-color:#FF9635;
 $content-text-color:#22323D;
  
 .container{
-  background-color: darkgoldenrod;
   width:1200px;
   height:auto;
-  margin:0,auto;
-  color: #357EBD;
-  }
+  margin:0 auto;
+
+}
   
 
-/* herder*/
+@media only screen and (max-width: 940px) {
 
+body{
+
+  .education-technologies-title h2{
+  font-size: 32px;
+  }
+  .education-technologies-title{
+  flex-flow: column;
+  }
+
+
+
+}
+
+
+}
 
 
 .education-header{
@@ -39,6 +53,7 @@ border-bottom-right-radius:150px;
 
 .education-header-navbar{
 display: flex;
+justify-content: space-between;
 padding-top: 24px;
 }
 
@@ -50,6 +65,7 @@ height:21px;
 .education-header-navbar-menu{
 
 display: flex;
+
 
 }
 
@@ -109,6 +125,8 @@ background-color: $button-hover-color;
 
 .education-header-content{
 margin-top: 100px;
+width: 660px;
+display: flex;
 
 }
 
@@ -138,6 +156,7 @@ left:2px;
 margin-top: 24px;
 font-size: 70px;
 color: white;
+word-wrap:break-word;
 
 }
 
@@ -228,8 +247,6 @@ background: url(/Zora_20210812/images/Polygon3.svg) no-repeat;
 
 
 .education-technologies-container{
-margin-left: 300px;
-margin-right: 300px;
 margin-top: 100px;
 margin-bottom:167px;
 }
@@ -241,10 +258,16 @@ justify-content: space-between;
 align-items: center;
 }
 
+.education-technologies-title-container h2{
+font-size: 45px;
+width: 450px;
+}
+
+
 
 .education-technologies-img{
 display: flex;
-
+justify-content: space-between;
 }
 
 
@@ -254,7 +277,7 @@ display: inline;
 }
 
 .education-technologies-img li{
-margin-left: 34px;
+margin-left: 30px;
 
 }
 
@@ -418,14 +441,13 @@ height:374px;
 .education-career-container{
 display: flex;
 justify-content: space-between;
-margin-left: 300px;
-margin-right: 300px;
 padding-top: 100px;
 }
 
 
 .education-career-container-skill{
 display: flex;
+justify-content: space-between;
 }
 
 
@@ -449,17 +471,21 @@ letter-spacing:0.5px;
 
 
 .separator-line{
+
 display: flex;
+justify-content: space-between;
 }
 
 
 
 .parallelogram{
-  width: 25.5px;
-  height: 6px;
-  transform: skew(20deg);
-  background:$button-hover-color;
-  margin-right: 10px;
+
+width: 25.5px;
+height: 6px;
+transform: skew(20deg);
+background:$button-hover-color;
+margin-right: 10px;
+
 }
 
 
@@ -469,6 +495,7 @@ display: flex;
 height:274px;
 width: 400px;
 background-color: #FFFFFF;
+
 }
 
 
@@ -523,10 +550,9 @@ background: url(/Zora_20210812/images/Polygon3.svg) no-repeat;
 
 
 .education-choose{
+
 display: flex;
 justify-content: space-between;
-margin-left: 300px;
-margin-right: 300px;
 margin-top:169px ;
 margin-bottom:130px;
 }
@@ -607,55 +633,249 @@ right: 8px;
 background: url(/zora_20210812/images/fa-solid_crown_gray.svg)no-repeat;
 }
 
-.education-comment{
+.education-comment-bg{
 
 height: 970px;
-background-color:#ECF0F2 ;
+background-color:#ecf0f282 ;
 
 }
 
 
 .education-comment-title{
-
 display: flex;
 justify-content: space-between;
-margin-left: 300px;
-margin-right: 300px;
 padding-top: 75px;
-
-
 }
 
 .education-comment-title p{
-
-  margin: 0;
+margin: 0;
 }
 
 .education-comment-score{
-
 display: flex;
 }
 
-.education-comment-score h1{
 
+
+.education-comment-score h1{
 font-size:90px ;
 color: $content-text-color;
 margin: 0;
 }
 
 
-.education-comment-content{
-margin-left: 300px;
-margin-right: 300px;
+.education-comment-content-block{
+width: 568px;
+height: 210px;
+background-color: #FFFFFF;
+border-radius: 30px;
+margin-top: 100px;
+
 }
 
-.education-comment-content-block{
-  width: 568px;
-  height: 210px;
-  background-color: #FFFFFF;
-  border-radius: 30px;
-  }
-
 .education-comment-content-block p{
-padding-top: 59px;
+padding:0;
+margin-top: -20px;
+line-height: 20px;
+margin-left:35px ;
+margin-bottom:50px ;
+}
+
+.education-comment-score-star{
+margin-top: 10px;
+margin-left: 51px;
+}
+
+.star-elementor{
+display: flex;
+margin-bottom: 11px;
+}
+
+.star{
+color: #FFAB5E;
+}
+
+.education-comment-score-star-title{
+line-height: 25px;
+}
+
+.education-comment-content-block-photo{
+border-radius: 15px;
+background-size: cover;
+}
+
+.education-comment-content-block-photo1{
+position: relative;
+bottom:50px;
+left: 35px;
+}
+
+.elementor-star-full{
+  display: flex;
+}
+
+.elementor-star-full p{
+
+margin-right: 263px;
+
+}
+
+.star-full::after{
+content: "\002605";
+color: #FFAB5E;
+padding-right: 8.5px;
+position: relative;
+top:-15px
+
+}
+
+.education-comment-row{
+
+display: flex;  
+justify-content: space-between;
+
+}
+
+
+.education-join-bg{
+
+height: 400px;
+background-color:#ECF0F2;
+
+}
+
+.education-join{
+text-align: center;  
+padding-top:76px ;
+
+}
+
+
+.education-join h1{
+font-size:45px;
+margin-top: 0;
+}
+
+.education-join p{
+  font-size:15px;
+}
+
+
+input[type=email] {
+height: 50px;
+width: 391px;
+background-color: #FFFFFF;
+border-style:solid;
+border-color:#E5E5E5 ;
+margin-top: 29px;
+padding-left: 14px;
+}
+
+
+.email-btn-elementor{
+
+background-color: $second-color;
+border-style:none;
+text-align: center;
+border-radius:100px;
+font-size: 14px;
+color: #FFFFFF;
+padding: 15px 32px;
+cursor: pointer;
+}
+
+.email-btn-elementor:hover{
+background-color: $button-hover-color;
+}
+
+
+
+.email-btn{
+
+margin-top: 29px;  
+
+}
+
+.footer-bg{
+  height: 400px;
+  padding-top:106px ;
+}
+
+.footer-logo{
+height: 60px; 
+width: auto;
+margin-bottom: 57px;
+}
+
+.footer-row-left p{
+color: $content-text-color;
+margin-left: 0;
+line-height: 25px;
+}
+
+.footer{
+display: flex;  
+justify-content: space-between;
+}
+
+.footer-row-left ul{
+display: flex;
+list-style-type:none ;
+padding-left: 0;
+margin-top: 40px;
+}
+
+.footer-row-left li{
+padding-right:15px ;
+
+}
+
+
+.footer-row-right{
+display: flex;
+
+}
+
+
+.footer-row-right-list-1 h1,
+.footer-row-right-list-2 h1{
+font-size: 21px;
+color: $content-text-color;
+}
+
+
+.footer-row-right-list-1 ul,
+.footer-row-right-list-2 ul{
+list-style-type: none;
+margin-top:30px ;
+padding-left: 0;  
+font-size: 15px;
+
+}
+
+.footer-row-right-list-1 li,
+.footer-row-right-list-2 li{
+color: $content-text-color;
+padding-bottom: 11px;  
+
+}
+
+.footer-row-right-list-1{
+margin-right: 150px;
+
+}
+
+
+.footer-container{
+height: 100px;
+border-top:1px solid #989898 ;
+margin: 0 auto;
+}
+
+.footer-copyright{
+display: flex;  
+justify-content: space-between;
+margin-top:50.5px ;
+margin-bottom: 50px;
+font-size: 14px;
 }
