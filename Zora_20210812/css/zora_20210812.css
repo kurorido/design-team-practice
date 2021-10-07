@@ -3,24 +3,18 @@
 .container {
   width: 1200px;
   height: auto;
-  margin: 0 auto;
+  margin: auto;
 }
 
-@media only screen and (max-width: 940px) {
-  body .education-technologies-title h2 {
-    font-size: 32px;
-  }
-  body .education-technologies-title {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-  }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .education-header {
   position: relative;
   height: 710px;
-  background: url(/Zora_20210812/images/bg-01-free-img.jpeg);
+  background: url(/images/bg-01-free-img.jpeg);
   background-size: cover;
   border-bottom-right-radius: 150px;
   background-attachment: fixed;
@@ -33,17 +27,93 @@
 }
 
 .education-header-navbar {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  z-index: 1;
+}
+
+#menu-check {
+  display: none;
+}
+
+#menu-check:checked ~ nav {
+  display: block;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  display: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu-block ul {
+  list-style-type: none;
+  display: none;
+}
+
+.menu-block li {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.menu-block li a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 24px;
+  width: 1200px;
+  height: auto;
+  margin: auto;
 }
 
 .education-header-logo {
   height: 21px;
+}
+
+label {
+  display: block;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.menu-btn {
+  opacity: 0%;
+  background-color: #FFAB5E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  height: auto;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin: 2px;
 }
 
 .education-header-navbar-menu {
@@ -53,7 +123,7 @@
 }
 
 .education-header-navbar-menu ul li {
-  display: inline;
+  display: block;
 }
 
 .education-header-navbar-menu ul {
@@ -118,7 +188,7 @@ li a:hover:not(.active) {
   content: "";
   width: 19px;
   height: 19px;
-  background: url(/Zora_20210812/images/Ellipse1.svg) no-repeat;
+  background: url(/images/Ellipse1.svg) no-repeat;
   position: absolute;
   left: 2px;
 }
@@ -191,7 +261,7 @@ li a:hover:not(.active) {
   content: "";
   width: 9px;
   height: 9px;
-  background: url(/Zora_20210812/images/Polygon2.svg) no-repeat;
+  background: url(/images/Polygon2.svg) no-repeat;
   position: absolute;
   top: 50%;
   margin-top: -4px;
@@ -199,7 +269,7 @@ li a:hover:not(.active) {
 }
 
 .education-header-content-course-all:hover::before {
-  background: url(/Zora_20210812/images/Polygon3.svg) no-repeat;
+  background: url(/images/Polygon3.svg) no-repeat;
 }
 
 /*education-technologies-container*/
@@ -220,31 +290,32 @@ li a:hover:not(.active) {
           align-items: center;
 }
 
+.education-technologies-title-container {
+  width: 50%;
+}
+
 .education-technologies-title-container h2 {
   font-size: 45px;
-  width: 450px;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 
 .education-technologies-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.education-technologies-img ul li {
-  display: inline;
-}
-
-.education-technologies-img li {
-  margin-left: 30px;
+  width: 50%;
 }
 
 .education-technologies-img ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style-type: none;
   overflow: hidden;
+  width: 100%;
 }
 
 .education-technologies-courses {
@@ -257,24 +328,37 @@ li a:hover:not(.active) {
           justify-content: space-between;
 }
 
+.education-technologies-courses-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+}
+
 .education-technologies-courses-title p {
   padding-bottom: 12px;
   margin: 0;
 }
 
 .education-technologies-courses-title h2 {
+  font-size: 45px;
   margin: 0;
 }
 
 .education-technologies-courses-line {
   border-left: solid #FFAB5E 3px;
-  height: 85px;
+  height: 100%;
+  width: 55%;
 }
 
 .education-technologies-courses-line p {
   color: #22323D;
-  padding-left: 33px;
+  padding-left: 40px;
   line-height: 30px;
+  word-wrap: break-word;
   margin-top: 0;
 }
 
@@ -302,6 +386,8 @@ li a:hover:not(.active) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -309,6 +395,7 @@ li a:hover:not(.active) {
 
 .education-popular-courses-list-content {
   border: solid #333333 1px;
+  width: 30%;
   height: 409px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -329,20 +416,24 @@ li a:hover:not(.active) {
 }
 
 .education-popular-courses-list-content img {
-  height: 211px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .education-popular-courses-list-content-btn {
   background-color: #428BCA;
   border: #357EBD;
   border-style: none;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: inline-block;
   border-radius: 4px;
   font-size: 14px;
   color: #FFFFFF;
-  padding: 15px 130px;
+  padding: 6px 12px;
   cursor: pointer;
+  width: 100%;
 }
 
 .education-popular-courses-list-content-btn:hover {
@@ -353,7 +444,7 @@ li a:hover:not(.active) {
   margin-top: 17px;
   border-top: solid #C4C4C4 5px;
   border-radius: 11px;
-  width: 335px;
+  width: 100%;
   font-size: 12px;
   color: #007991;
 }
@@ -362,23 +453,23 @@ li a:hover:not(.active) {
   float: right;
 }
 
-.education-popular-courses-list-content h3,
-p,
-.education-popular-courses-list-content-btn,
-.complete-bar {
-  margin-left: 21px;
+.content-box {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
 }
 
 .education-career {
-  background: url(/Zora_20210812/images/background1.jpeg);
+  background: url(/images/background1.jpeg);
   background-size: cover;
   background-attachment: fixed;
-  height: 374px;
+  height: 100%;
 }
 
 .education-career-mask {
   background: linear-gradient(290deg, #2e4a66e5, #007991e5);
-  height: 374px;
+  height: 100%;
 }
 
 .education-career-container {
@@ -398,10 +489,12 @@ p,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .education-career-container-skill-list {
-  margin-right: 50px;
+  width: 33.33%;
+  margin-right: 40px;
 }
 
 .education-career-container-skill-list h1 {
@@ -422,9 +515,6 @@ p,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .parallelogram {
@@ -438,29 +528,27 @@ p,
 
 .education-career-container-skill-block {
   height: 274px;
-  width: 400px;
+  width: 70%;
   background-color: #FFFFFF;
+  padding: 40px;
 }
 
 .education-career-container-skill-block p {
   color: #007991;
-  margin-left: 52px;
-  margin-top: 37px;
   font-weight: bold;
+  word-wrap: break-word;
+  line-height: 1.5;
 }
 
 .education-career-container-skill-block h2 {
   font-size: 25px;
-  margin-left: 52px;
-  line-height: 30px;
-  margin-bottom: 25px;
   font-weight: bold;
 }
 
 .education-career-container-skill-block-star {
   font-size: 15px;
   position: relative;
-  margin-left: 70px;
+  padding-left: 20px;
 }
 
 .education-career-container-skill-block-star:hover {
@@ -472,15 +560,15 @@ p,
   content: "";
   width: 9px;
   height: 9px;
-  background: url(/Zora_20210812/images/Polygon4.svg) no-repeat;
+  background: url(./images/Polygon3.svg) no-repeat;
   position: absolute;
   top: 50%;
-  margin-top: -4px;
-  left: -15px;
+  margin-top: -5px;
+  left: 0;
 }
 
 .education-career-container-skill-block-star:hover::before {
-  background: url(/Zora_20210812/images/Polygon3.svg) no-repeat;
+  background: url(./images/Polygon3.svg) no-repeat;
 }
 
 .education-choose {
@@ -549,7 +637,7 @@ p,
 
 .education-choose-right-content-list-icon1::before {
   content: "";
-  background: url(/zora_20210812/images/fa-solid_crown.svg) no-repeat;
+  background: url(/images/fa-solid_crown.svg) no-repeat;
   position: absolute;
   width: 21px;
   height: 17px;
@@ -558,7 +646,7 @@ p,
 }
 
 .education-choose-right-content-list-icon1:hover:before {
-  background: url(/zora_20210812/images/fa-solid_crown_gray.svg) no-repeat;
+  background: url(/images/fa-solid_crown_gray.svg) no-repeat;
 }
 
 .education-comment-bg {
@@ -593,11 +681,17 @@ p,
 }
 
 .education-comment-content-block {
-  width: 568px;
+  width: 48%;
   height: 210px;
   background-color: #FFFFFF;
   border-radius: 30px;
   margin-top: 100px;
+  padding: 20px;
+}
+
+.comment-box {
+  height: 100%;
+  width: 100%;
 }
 
 .education-comment-content-block p {
@@ -605,7 +699,7 @@ p,
   margin-top: -20px;
   line-height: 20px;
   margin-left: 35px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .education-comment-score-star {
@@ -643,10 +737,15 @@ p,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.elementor-star-full p {
-  margin-right: 263px;
+.star-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .star-full::after {
@@ -799,4 +898,81 @@ input[type=email] {
   margin-top: 50.5px;
   margin-bottom: 50px;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .container, .menu-container {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .education-technologies-title {
+    display: block;
+  }
+
+  .education-technologies-img ul {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+
+  .education-technologies-img li {
+    display: inline;
+    padding: 0 18px;
+  }
+
+  .education-technologies-title-container h2 {
+    text-align: center;
+  }
+
+  .education-technologies-title-container {
+    width: 100%;
+  }
+
+  .education-technologies-img {
+    width: 100%;
+  }
+
+  .education-career-container {
+    display: block;
+    padding-top: 50px;
+  }
+
+  .education-career-container h2 {
+    font-size: 18px;
+  }
+
+  .education-technologies-courses {
+    display: block;
+  }
+
+  .button-box {
+    margin-top: 40px;
+  }
+
+  .education-technologies-courses-flex {
+    width: 100%;
+  }
+
+  .education-career-container-skill-block {
+    width: 40%;
+    margin-top: 40px;
+  }
+}
+label {
+  display: block;
+}
+
+.menu-btn {
+  opacity: 100%;
+}
+
+@media only screen and (max-width: 1010px) {
+  .education-header-navbar-menu {
+    display: none;
+  }
+
+  .menu-block {
+    display: block;
+  }
 }
