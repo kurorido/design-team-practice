@@ -6,34 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <style>
+        .done-task {
+            text-decoration: line-through;
+        }
+    </style>
 </head>
 <body>
 
     <div id="app">
         <input type="text" v-model="taskText"><button v-on:click="addTodo">+</button>
 
+        <h3>共有 {{ tasks.length }} 個工作，已完成 {{ doneCount }} 個</h3>
+
         <ul>
-            <li v-for="task in tasks">
-                {{ task }}
+            <li v-for="task in tasks" :class="{ 'done-task': task.done }">
+                <input type="checkbox" v-model="task.done">
+                {{ task.name }}
                 <button v-on:click="removeTodo(task)">X</button>
             </li>
         </ul>
 
         <button  v-on:click="clearTasks">Clear</button>
+
+        <button v-on:click="test">Test</button>
+
+        <!-- <button v-on:click="count++">{{ count }}</button>
+        <button v-on:click="count++">{{ count }}</button>
+        <button v-on:click="count++">{{ count }}</button>
+        <button v-on:click="count++">{{ count }}</button>
+        <button v-on:click="count++">{{ count }}</button>
+        <button v-on:click="count++">{{ count }}</button> -->
+
+        <counter></counter>
+        <counter></counter>
+        <counter></counter>
+        <counter></counter>
+        <counter></counter>
+        <counter></counter>
+        <counter></counter>
+
+        {{ afterTenYear }}
     </div>
 
     <script>
+        Vue.component('counter', {
+            template: `<button v-on:click="count++">{{ count }}</button>`,
+            data() {
+                return {
+                    count: 0
+                }
+            }
+        })
+
         new Vue({
             el: '#app',
             data: {
+                count: 0,
                 taskText: '',
+                person: {
+                    name: 25,
+                },
                 tasks: [
-                    'Task 1', 'Task 2', 'Task 3'
-                ]
+                    {
+                        name: 'Task 1',
+                        done: false
+                    },
+                    {
+                        name: 'Task 2',
+                        done: false,
+                    },
+                    {
+                        name: 'Task 3',
+                        done: false
+                    }
+                ],
+            },
+            computed: {
+                afterTenYear() {
+                    return this.person.name + 10
+                },
+                doneCount() {
+                    var count = 0
+                    for (var task of this.tasks) {
+                        if (task.done) {
+                            count = count + 1
+                        } else {
+
+                        }
+                    }
+                    return count
+                }
             },
             methods: {
+                test() {
+
+                },
                 addTodo() {
-                    this.tasks.push(this.taskText)
+                    this.tasks.push({
+                        name: this.taskText,
+                        done: false
+                    })
                     this.taskText = ''
                 },
                 removeTodo(task) {
