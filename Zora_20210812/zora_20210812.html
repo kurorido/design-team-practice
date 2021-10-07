@@ -10,28 +10,57 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 </head>
 <body>
-
+  
+<div id="app">
   <div class="education-header">  
     <div class="education-header-mask">
-      <div class="container">
+
+      <div class="nav">
         <div class="education-header-navbar">
-          <div class="education-header-navbar-logo">
-            <img src="./images/logo-retina-free-img.png">
-          </div>
-      
-          <div class="education-header-navbar-menu">
+          <div class="menu-container">
+            <div class="education-header-navbar-logo">
+              <img src="./images/logo-retina-free-img.png">
+            </div>
+        
+            <div class="education-header-navbar-menu">
+              
+              <ul>
+                <li><a href="＃">Home</a></li>
+                <li><a href="＃">All Courses</a></li>
+                <li><a href="＃">About Us</a></li>
+                <li><a href="＃">Instructors</a></li>
+                <li><a href="＃">Pricing & FAQ</a></li>
+              </ul>
+              
+              <button class="education-header-navbar-btn">START LEARNING</button>
+              
+            </div>
             
-            <ul>
-              <li><a href="＃">Home</a></li>
-              <li><a href="＃">All Courses</a></li>
-              <li><a href="＃">About Us</a></li>
-              <li><a href="＃">Instructors</a></li>
-              <li><a href="＃">Pricing & FAQ</a></li>
-            </ul>
             
-            <button class="education-header-navbar-btn">START LEARNING</button>
           </div>
+          
         </div>
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check">
+            <a class="menu-btn" for="menu-check"> 
+              <div class="menu-icon"></div>
+              <div class="menu-icon"></div>
+              <div class="menu-icon"></div>
+            </a>
+          </label>
+        <nav>
+          <ul>
+            <li><a href="＃">Home</a></li>
+            <li><a href="＃">All Courses</a></li>
+            <li><a href="＃">About Us</a></li>
+            <li><a href="＃">Instructors</a></li>
+            <li><a href="＃">Pricing & FAQ</a></li>
+          </ul>
+        </nav>
+  
+      </div>
+     
+      <div class="container">
         <div class="education-header-content">
         <div>
         <p class="education-header-content-video">ON - DEMAND VIDEO TRAINING</p>
@@ -67,32 +96,35 @@
 
       <div class="education-technologies-img">
         <ul>
-          <li><img src="/zora_20210812/images/html5.svg"></li>
-          <li><img src="/zora_20210812/images/css3.svg"></li>
-          <li><img src="/zora_20210812/images/js.svg"></li>
-          <li><img src="/zora_20210812/images/node-js.svg"></li>
-          <li><img src="/zora_20210812/images/vuejs.svg"></li>
-          <li><img src="/zora_20210812/images/react.svg"></li>
-          <li><img src="/zora_20210812/images/python.svg"></li>
-          <li><img src="/zora_20210812/images/angular.svg"></li>
+          <li><img src="./images/html5.svg"></li>
+          <li><img src="./images/css3.svg"></li>
+          <li><img src="./images/js.svg"></li>
+          <li><img src="./images/node-js.svg"></li>
+          <li><img src="./images/vuejs.svg"></li>
+          <li><img src="./images/react.svg"></li>
+          <li><img src="./images/python.svg"></li>
+          <li><img src="./images/angular.svg"></li>
         </ul>
       </div>
 
     </div>  
 
     <div class="education-technologies-courses">
+      <div class="education-technologies-courses-flex">
+        <div class="education-technologies-courses-title">
+          <p>Top Categories</p>
+          <h2>Popular Courses</h2>
+        </div>
 
-      <div class="education-technologies-courses-title">
-        <p>Top Categories</p>
-        <h2>Popular Courses</h2>
+        <div class="education-technologies-courses-line">
+          <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim.</p>
+          </div>
+        </div>
       </div>
-
-      <div class="education-technologies-courses-line">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br>
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut<br>
-          enim ad minim.</p>
-      </div>
-      <div>
+      <div class="button-box">
         <button class="education-technologies-courses-btn">VIEW ALL COURSE</button>
       </div>    
     </div>
@@ -100,35 +132,50 @@
     <div class="education-popular-courses-list">
      
       <div class="education-popular-courses-list-content">
-        <img src="/zora_20210812/images/html-768x428.jpeg">
-        <h3>HTML5/CSS3 Essentials</h3>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <button class="education-popular-courses-list-content-btn">See more...</button>  
-        <div class="complete-bar">
-        <p>0% COMPLETE</p>
-        </div>  
+        <img src="./images/html-768x428.jpeg">
+        <div class="content-box">
+          <div class="content">
+            <h3>HTML5/CSS3 Essentials</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <button class="education-popular-courses-list-content-btn">See more...</button>  
+            <div class="complete-bar">
+              <p>0% COMPLETE</p>
+            </div>
+          </div>  
+        </div>
       </div>
       
       <div class="education-popular-courses-list-content">
-        <img src="/zora_20210812/images/wordpress-768x428.jpeg">
-        <h3>WordPress Basic Tutorial</h3>
-        <p>Repellat perspiciatis cum! Doloremque ea viverra.</p>
-        <button class="education-popular-courses-list-content-btn">See more...</button>  
-        <div class="complete-bar">
-          <p>0% COMPLETE</p>
+        <img src="./images/wordpress-768x428.jpeg">
+        <div class="content-box">
+          <div class="content">
+            <h3>WordPress Basic Tutorial</h3>
+            <p>Repellat perspiciatis cum! Doloremque ea viverra.</p>
+            <button class="education-popular-courses-list-content-btn">See more...</button>  
+            <div class="complete-bar">
+              <p>0% COMPLETE</p>
+            </div>
+          </div>  
         </div>  
       </div>
 
       <div class="education-popular-courses-list-content">
-        <img src="/zora_20210812/images/ecommerce-768x428.jpeg">
-        <h3>E-Commerce Course</h3>
-        <p>Ut ullamcorper viverra neque a porttitor.</p>
-        <a class="education-popular-courses-list-content-btn">See more...</a> 
-        <div class="complete-bar">
-          <p>0% COMPLETE</p>
-        </div>   
+        <img src="./images/ecommerce-768x428.jpeg">
+        <div class="content-box">
+          <div class="content">
+            <h3>E-Commerce Course</h3>
+            <p>Ut ullamcorper viverra neque a porttitor.</p>
+            <a class="education-popular-courses-list-content-btn">See more...</a> 
+            <div class="complete-bar">
+              <p>0% COMPLETE</p>
+            </div>   
+          </div>  
+        </div>  
       </div>
     </div>
+
+  
+
     </div>
   </div>
 
@@ -145,11 +192,13 @@
               <div class="parallelogram"></div>
               <div class="parallelogram"></div>
             </div>
+            
             <h1>Experience</h1>
-            <p>Lorem ipsum dolor sit amet,<br>
-              consec tetur adipis cing elit. Ut<br>
-              elit tellus, luctus nec ullam<br>
+            <p>Lorem ipsum dolor sit amet,
+              consec tetur adipis cing elit. Ut
+              elit tellus, luctus nec ullam
               corper mattis, pulvinar dapibus.</p>
+            
           </div>
 
           <div class="education-career-container-skill-list">
@@ -160,9 +209,9 @@
               <div class="parallelogram"></div>
             </div>
             <h1>Education</h1>
-            <p>Lorem ipsum dolor sit amet,<br>
-              consec tetur adipis cing elit. Ut<br>
-              elit tellus, luctus nec ullam<br>
+            <p>Lorem ipsum dolor sit amet,
+              consec tetur adipis cing elit. Ut
+              elit tellus, luctus nec ullam
               corper mattis, pulvinar dapibus.</p>
           </div>
 
@@ -174,9 +223,9 @@
               <div class="parallelogram"></div>
             </div>
             <h1>Certificate</h1>
-            <p>Lorem ipsum dolor sit amet,<br>
-              consec tetur adipis cing elit. Ut<br>
-              elit tellus, luctus nec ullam<br>
+            <p>Lorem ipsum dolor sit amet,
+              consec tetur adipis cing elit. Ut
+              elit tellus, luctus nec ullam
               corper mattis, pulvinar dapibus.</p>
           </div>
 
@@ -184,11 +233,15 @@
         </div>
 
         <div class="education-career-container-skill-block">
+          <div class="block-box">
             <p>Study at Your Own Pace</p>
-            <h2>Boost Your Career by<br>
-              Learning Skills in High<br>
+            <h2>Boost Your Career by
+              Learning Skills in High
               Demand</h2>
             <p2 class="education-career-container-skill-block-star">GET STARTED</p2>
+            
+          </div>
+            
         </div>
       
       </div>
@@ -276,32 +329,38 @@
         <div class="education-comment-content-block-photo1">
         <img class="education-comment-content-block-photo" src="./images/online-programming-course-review-01.jpeg">
         </div>
-        <p >“Massa amet, at dolor tellus pellentesque aenean in eget massa<br>
-        tincidunt habitasse volutpat adipiscing sed id sit auctor eu<br>
+        <div class="comment-box">
+        <p >“Massa amet, at dolor tellus pellentesque aenean in eget massa
+        tincidunt habitasse volutpat adipiscing sed id sit auctor eu
         vivamus nulla.”</p>
         <div class="elementor-star-full">
-          <p><b>Emma Hart</b></p>
+          <div><p><b>Emma Hart</b></p></div>
+          <div class="star-box">
           <div class="star-full"></div>
           <div class="star-full"></div>
           <div class="star-full"></div>
           <div class="star-full"></div>
           <div class="star-full"></div>
+        </div>
         </div> 
+        </div>
       </div>
       <div class="education-comment-content-block">
         <div class="education-comment-content-block-photo1">
         <img class="education-comment-content-block-photo" src="./images/online-programming-course-review-02.jpeg">
         </div>
-        <p >“Ut morbi felis, felis massa quam sit massa, amet, bibendum<br>
-          pulvinar elit in adipiscing amet imperdiet ac felis congue enim,<br>
+        <p >“Ut morbi felis, felis massa quam sit massa, amet, bibendum
+          pulvinar elit in adipiscing amet imperdiet ac felis congue enim,
           elementum orci.”</p>
         <div class="elementor-star-full">
-          <p><b>Eddie Johnson</b></p>
+          <div><p><b>Eddie Johnson</b></p></div>
+          <div class="star-box">
           <div class="star-full"></div>
           <div class="star-full"></div>
           <div class="star-full"></div>
           <div class="star-full"></div>
           <div class="star-full"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -311,32 +370,36 @@
         <div class="education-comment-content-block-photo1">
         <img class="education-comment-content-block-photo" src="./images/online-programming-course-review-03.jpeg">
         </div>
-        <p >“Donec in varius facilisis justo, curabitur aliquet sit justo sed sit<br>
-          interdum diam dolor ornare quis a felis adipiscing hendrerit<br>
+        <p >“Donec in varius facilisis justo, curabitur aliquet sit justo sed sit
+          interdum diam dolor ornare quis a felis adipiscing hendrerit
           quisque enim.”</p>
         <div class="elementor-star-full">
-          <p><b>Jonathan Doe</b></p>
+          <div><p><b>Jonathan Doe</b></p></div>
+          <div class="star-box">
           <div class="star-full"></div>
           <div class="star-full"></div>
           <div class="star-full"></div>
           <div class="star-full"></div>
           <div class="star-full"></div>
+          </div>
         </div> 
       </div>
       <div class="education-comment-content-block">
         <div class="education-comment-content-block-photo1">
         <img class="education-comment-content-block-photo" src="./images/online-programming-course-review-04.jpeg">
         </div>
-        <p >“Pulvinar dui vitae enim, diam et nulla elit nam leo lacinia et, a,<br>
-          pulvinar gravida enim in blandit mauris vitae volutpat urna, sed<br>
+        <p >“Pulvinar dui vitae enim, diam et nulla elit nam leo lacinia et, a,
+          pulvinar gravida enim in blandit mauris vitae volutpat urna, sed
           justo hendrerit.”</p>
         <div class="elementor-star-full">
-          <p><b>Mike Edward</b></p>
+          <div><p><b>Mike Edward</b></p></div>
+          <div class="star-box">
           <div class="star-full"></div>
           <div class="star-full"></div>
           <div class="star-full"></div>
           <div class="star-full"></div>
           <div class="star-full"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -409,7 +472,31 @@
     </div>
   </div>
 </div>
+</div>
 
+
+<script>
+  new Vue({
+    el:'#app',
+
+    method:{
+      myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+        }
+    }
+      
+
+
+
+  })
+  
+  
+  </script>
 
 </body>
 </html>

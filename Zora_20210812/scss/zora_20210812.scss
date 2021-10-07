@@ -10,235 +10,19 @@ $content-text-color:#22323D;
 .container{
   width:1200px;
   height:auto;
-  margin:0 auto;
-
-}
-  
-
-@media only screen and (max-width: 940px) {
-
-body{
-
-  .education-technologies-title h2{
-  font-size: 32px;
-  }
-  .education-technologies-title{
-  flex-flow: column;
-  }
-
-
+  margin:auto;
 
 }
 
 
-}
-
-
-.education-header{
-position: relative;
-height: 710px;
-background:url(/Zora_20210812/images/bg-01-free-img.jpeg);
-background-size:cover;
-border-bottom-right-radius:150px;
-background-attachment: fixed;
-}
-
-
-.education-header-mask{
-height: 710px;
-background: linear-gradient(290deg,rgba(0, 121, 145, 0.872),#2E4A66);
-border-bottom-right-radius:150px;
-}
-
-
-.education-header-navbar{
-display: flex;
-justify-content: space-between;
-padding-top: 24px;
-}
-
-.education-header-logo{
-height:21px;
-}
-
-
-.education-header-navbar-menu{
-
-display: flex;
-
-
-}
-
-
-.education-header-navbar-menu ul li{
-display: inline;
-}
-
-.education-header-navbar-menu ul{
-list-style-type: none;
-overflow: hidden;
-
-}
-
-
-.education-header-navbar-menu li{
-font-size: 15px;
-float: right;
-}
-
-.education-header-navbar-menu li a {
-display: block;
-color: #FFFFFFBF;
-padding-right:45px;
-text-decoration: none;
-}
-
-
-li a:hover:not(.active) {
-color: #FFFFFF;
-}
-
-
-.education-header-navbar-menu li a:hover:not(.active) {
-color: #FFFFFF;
+* {
+  box-sizing: border-box;
 }
 
 
 
-.education-header-navbar-btn{
-background-color: $second-color;
-border-style:none;
-text-align: center;
-display: inline-block;
-border-radius:100px;
-font-size: 14px;
-color: #FFFFFF;
-padding: 15px 32px;
-cursor: pointer;
-}
 
-.education-header-navbar-btn:hover{
-background-color: $button-hover-color;
-}
-
-
-
-.education-header-content{
-margin-top: 100px;
-width: 660px;
-display: flex;
-
-}
-
-
-.education-header-content-video{
-color: white;
-font-size: 15px;
-position: relative;
-padding-left: 35px;
-margin-left: 0;
-}
-
-
-.education-header-content-video::before{
-display: block;
-content: '';
-width: 19px;
-height: 19px;
-background: url(/Zora_20210812/images/Ellipse1.svg) no-repeat;
-position: absolute;
-left:2px;
-}
-
-
-
-.education-header-content-title h1{
-margin-top: 24px;
-font-size: 70px;
-color: white;
-word-wrap:break-word;
-
-}
-
-
-.education-header-content-title p{
-font-size: 19px;
-line-height:30px;
-letter-spacing: 5%;
-color: white;
-margin-top: 30px;
-margin-left: 0;
-}
-
-
-.education-header-content-course{
-margin-top: 48px;
-display: flex;
-justify-content:flex-start;
-align-items: center;
-}
-
-.education-header-content-course p{
-
-margin-left:78px;
-}
-
-
-.education-header-content-course-btn{
-background-color: $second-color;
-border-style:none;
-text-align: center;
-display: inline-block;
-border-radius:100px;
-font-size: 14px;
-color: #FFFFFF;
-padding: 15px 32px;
-cursor: pointer;
-}
-
-
-
-.education-header-content-course-btn:hover{
-
-background-color:$button-hover-color
-}
-
-
-
-.education-header-content-btn:hover{
-background-color: $button-hover-color;
-}
-
-.education-header-content-course-all{
-
- font-size: 15px; 
- color: #FFFFFF;
- position: relative;
-
-}
-
-.education-header-content-course-all:hover{
-
-color: $button-hover-color;
-cursor: pointer;
-}
-
-.education-header-content-course-all::before{
-content:"";
-width: 9px;
-height: 9px;
-background: url(/Zora_20210812/images/Polygon2.svg) no-repeat;
-position: absolute;
-top: 50%;
-margin-top: -4px;
-left:-15px
-}
-
-.education-header-content-course-all:hover::before{
-
-background: url(/Zora_20210812/images/Polygon3.svg) no-repeat;
-}
-
+@import './zora_20210812_header.scss';
 
 
 /*education-technologies-container*/
@@ -249,6 +33,7 @@ background: url(/Zora_20210812/images/Polygon3.svg) no-repeat;
 .education-technologies-container{
 margin-top: 100px;
 margin-bottom:167px;
+
 }
 
 
@@ -258,41 +43,53 @@ justify-content: space-between;
 align-items: center;
 }
 
+.education-technologies-title-container{
+width: 50%;
+}
+
 .education-technologies-title-container h2{
+
 font-size: 45px;
-width: 450px;
+line-height: 1.2;
+word-wrap:break-word;
 }
 
 
 
-.education-technologies-img{
-display: flex;
-justify-content: space-between;
+
+
+.education-technologies-img {
+width: 50%;
 }
 
 
-
-.education-technologies-img ul li{
-display: inline;
-}
-
-.education-technologies-img li{
-margin-left: 30px;
-
-}
 
 
 .education-technologies-img ul{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 list-style-type: none;
 overflow: hidden;
+width: 100%;
 }
+
 
 
 .education-technologies-courses{
 margin-top: 80px;
 display: flex; 
 justify-content: space-between;
+
 }
+
+.education-technologies-courses-flex{
+  display: flex; 
+  justify-content: space-between;
+  width: 75%;
+}
+
+
 
 
 .education-technologies-courses-title p{
@@ -303,21 +100,23 @@ margin: 0;
 
 
 .education-technologies-courses-title h2{
-
+font-size: 45px;
 margin: 0;
 }
 
 
 .education-technologies-courses-line{
 border-left:solid $second-color 3px;
-height: 85px;
+height: 100%;
+width: 55%;
 }
 
 .education-technologies-courses-line p{
 
 color: $content-text-color;
-padding-left: 33px;
+padding-left: 40px;
 line-height: 30px;
+word-wrap:break-word;
 margin-top: 0;
 
 }
@@ -345,15 +144,20 @@ background-color: $button-hover-color;
 .education-popular-courses-list{
 margin-top: 120px;
 display: flex;
+flex-wrap: wrap;
 justify-content: space-between;
 }
 
 .education-popular-courses-list-content{
 border:solid #333333 1px;
+width: 30%;
 height:409px;
 border-bottom-right-radius:5px;
 border-bottom-left-radius:5px;
 }
+
+
+
 
 .education-popular-courses-list-content h3,p{
 margin: 0;
@@ -373,7 +177,8 @@ padding-bottom:22px ;
 
 
 .education-popular-courses-list-content img{
-height: 211px;
+width: 100%;
+overflow:hidden;
 }
 
 
@@ -382,13 +187,14 @@ height: 211px;
 background-color: #428BCA;
 border: #357EBD;
 border-style:none;
-text-align: center;
-display: inline-block;
+justify-content: center;
+display:inline-block;
 border-radius:4px;
 font-size: 14px;
 color: #FFFFFF;
-padding: 15px 130px;
+padding: 6px 12px;
 cursor: pointer;
+width: 100%;
 
 }
 
@@ -403,7 +209,7 @@ background-color: #357EBD;
 margin-top:17px ;
 border-top: solid #C4C4C4 5px;
 border-radius: 11px;
-width:335px;
+width:100%;
 font-size: 12px;
 color: $primary-color;
 
@@ -416,25 +222,26 @@ color: $primary-color;
 float: right;
 }
 
-.education-popular-courses-list-content h3
-,p
-,.education-popular-courses-list-content-btn
-,.complete-bar
-{
-margin-left: 21px;
+
+
+.content-box{
+
+justify-content: center;
+padding: 10px;
+  
 }
 
 
 .education-career{
-background: url(/Zora_20210812/images/background1.jpeg);
+background: url(/images/background1.jpeg);
 background-size:cover;
 background-attachment: fixed;
-height:374px;
+height:100%;
 }
 
 .education-career-mask{
 background: linear-gradient(290deg,#2e4a66e5,#007991e5);
-height:374px;
+height:100%;
 
 }
 
@@ -442,17 +249,20 @@ height:374px;
 display: flex;
 justify-content: space-between;
 padding-top: 100px;
+
 }
 
 
 .education-career-container-skill{
 display: flex;
 justify-content: space-between;
+width: 100%;
 }
 
 
 .education-career-container-skill-list{
-margin-right: 50px;
+width: 33.33%;
+margin-right: 40px;
 }
 
 .education-career-container-skill-list h1{
@@ -473,7 +283,7 @@ letter-spacing:0.5px;
 .separator-line{
 
 display: flex;
-justify-content: space-between;
+
 }
 
 
@@ -493,27 +303,25 @@ margin-right: 10px;
 .education-career-container-skill-block{
 
 height:274px;
-width: 400px;
+width: 70%;
 background-color: #FFFFFF;
-
+padding: 40px;
 }
+
 
 
 .education-career-container-skill-block p{
 
 color: $primary-color;
-margin-left: 52px;
-margin-top: 37px;
 font-weight:bold;
+word-wrap: break-word;
+line-height:1.5;
 }
 
 
 .education-career-container-skill-block h2{
 
 font-size: 25px;
-margin-left: 52px;
-line-height: 30px;
-margin-bottom: 25px;
 font-weight:bold;
 }
 
@@ -522,9 +330,10 @@ font-weight:bold;
 
 font-size: 15px; 
 position: relative;
-margin-left: 70px;
-
+padding-left: 20px;
  }
+
+
  
  .education-career-container-skill-block-star:hover{
  
@@ -536,16 +345,16 @@ cursor: pointer;
  content:"";
 width: 9px;
 height: 9px;
-background: url(/Zora_20210812/images/Polygon4.svg) no-repeat;
+background: url(./images/Polygon3.svg) no-repeat;
 position: absolute;
 top: 50%;
-margin-top: -4px;
-left:-15px
+margin-top: -5px;
+left:0
 }
  
  .education-career-container-skill-block-star:hover::before{
  
-background: url(/Zora_20210812/images/Polygon3.svg) no-repeat;
+background: url(./images/Polygon3.svg) no-repeat;
 }
 
 
@@ -620,7 +429,7 @@ position: relative;
 
 .education-choose-right-content-list-icon1::before{
 content: "";
-background: url(/zora_20210812/images/fa-solid_crown.svg)no-repeat;
+background: url(/images/fa-solid_crown.svg)no-repeat;
 position: absolute;
 width:21px;
 height: 17px;
@@ -630,7 +439,7 @@ right: 8px;
 
 
 .education-choose-right-content-list-icon1:hover:before{
-background: url(/zora_20210812/images/fa-solid_crown_gray.svg)no-repeat;
+background: url(/images/fa-solid_crown_gray.svg)no-repeat;
 }
 
 .education-comment-bg{
@@ -665,11 +474,18 @@ margin: 0;
 
 
 .education-comment-content-block{
-width: 568px;
+width: 48%;
 height: 210px;
 background-color: #FFFFFF;
 border-radius: 30px;
 margin-top: 100px;
+padding: 20px;
+
+}
+
+.comment-box{
+height: 100%;
+width: 100%;  
 
 }
 
@@ -678,7 +494,7 @@ padding:0;
 margin-top: -20px;
 line-height: 20px;
 margin-left:35px ;
-margin-bottom:50px ;
+margin-bottom:30px ;
 }
 
 .education-comment-score-star{
@@ -712,12 +528,11 @@ left: 35px;
 
 .elementor-star-full{
   display: flex;
+  justify-content: space-between;
 }
 
-.elementor-star-full p{
-
-margin-right: 263px;
-
+.star-box{
+  display: flex;
 }
 
 .star-full::after{
@@ -879,3 +694,97 @@ margin-top:50.5px ;
 margin-bottom: 50px;
 font-size: 14px;
 }
+
+
+
+@media only screen and(max-width:1300px){
+  .container,.menu-container{
+    width: 95%;
+  }
+}
+
+
+@media only screen and(max-width:1024px){
+
+  
+  .education-technologies-title{
+    
+    display: block;
+   
+  }
+    
+  .education-technologies-img ul {
+    display: block;
+    padding: 0 ;
+    text-align: center;
+  }
+
+  .education-technologies-img li {
+    display: inline;
+    padding: 0 18px  ;
+   
+  } 
+
+  .education-technologies-title-container h2{
+    
+    text-align:center;
+  }
+  
+ 
+  
+  .education-technologies-title-container{
+    width:100%;
+  }
+  
+ 
+
+  .education-technologies-img{
+    width:100%;
+  }
+
+  .education-career-container{
+  display: block;
+  padding-top: 50px;
+  
+  }
+  .education-career-container h2{
+
+  font-size: 18px;
+  }
+
+  .education-technologies-courses{
+    display: block;
+  }
+  .button-box{
+    margin-top: 40px;
+  }
+
+  .education-technologies-courses-flex{
+    width: 100%;
+  }
+
+
+  .education-career-container-skill-block{
+    width: 40%;
+    margin-top: 40px;
+  }
+
+  }
+  label {
+		display: block;
+	}
+
+  .menu-btn{
+    opacity: 100%;
+    
+  }
+  @media only screen and(max-width:1010px){
+  
+  .education-header-navbar-menu{
+    display:none ;
+
+  }
+  .menu-block {
+    display: block;
+}
+  }
